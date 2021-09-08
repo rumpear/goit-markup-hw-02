@@ -1,0 +1,44 @@
+:root {
+  --primmary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+}
+
+.body {
+  background-color: #e5e5e5;
+  color: #212121;
+}
+.list {
+  list-style: none;
+}
+/* основной цвет background: #212121; */
+/* цвет акцента background: #2196F3; */
+/* вторичный цвет + контактов в хедере background: #757575; */
+/* цвет контактов в футере background: rgba(255, 255, 255, 0.6); */
+/* вторичный цвет фона background: #f5f4fa; */
+
+/* site nav */
+
+.site-nav .link {
+  color: var(--primmary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts-header .link:hover,
+.contacts-header .link:focus,
+.footer-contacts .link:hover,
+.footer-contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* .contacts-header .link:hover,
+.contacts-header .link:focus {
+  color: var(--accent-color); 
+}*/
+
+.contacts-header .link {
+  color: var(--secondary-text-color);
+}
+.footer-contacts .link {
+  color: rgba(255, 255, 255, 0.6);
+}
