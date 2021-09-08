@@ -2,26 +2,38 @@
   --primmary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
+  --bg-color: #2f303a;
 }
 
-.body {
-  background-color: #e5e5e5;
-  color: #212121;
-}
-.list {
-  list-style: none;
-}
 /* основной цвет background: #212121; */
 /* цвет акцента background: #2196F3; */
 /* вторичный цвет + контактов в хедере background: #757575; */
 /* цвет контактов в футере background: rgba(255, 255, 255, 0.6); */
 /* вторичный цвет фона background: #f5f4fa; */
+/* бэкграунд background: #2F303A; */
+
+.body {
+  /* background-color: var(--bg-color); */
+  color: #212121;
+}
+.header {
+  background-color: #ffffff;
+}
+.main-section {
+  background-color: var(--bg-color);
+}
+
+/* убираем точки у списка */
+.list {
+  list-style: none;
+}
 
 /* site nav */
 
 .site-nav .link {
   color: var(--primmary-text-color);
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contacts-header .link:hover,
@@ -31,14 +43,23 @@
   color: var(--accent-color);
 }
 
-/* .contacts-header .link:hover,
-.contacts-header .link:focus {
-  color: var(--accent-color); 
-}*/
-
 .contacts-header .link {
   color: var(--secondary-text-color);
 }
 .footer-contacts .link {
   color: rgba(255, 255, 255, 0.6);
+}
+.section2 {
+  background: #e5e5e5;
+}
+.section3 {
+  background: #e5e5e5;
+}
+
+.section-team {
+  background: #f5f4fa;
+}
+
+.footer {
+  background-color: var(--bg-color);
 }
