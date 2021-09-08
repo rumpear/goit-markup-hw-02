@@ -2,7 +2,9 @@
   --primmary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
-  --bg-color: #2f303a;
+  --primary-bg-color: #2f303a;
+  --secondary-bg-color: #e5e5e5;
+  --third-bg-color: #f5f4fa;
 }
 
 /* основной цвет background: #212121; */
@@ -13,14 +15,14 @@
 /* бэкграунд background: #2F303A; */
 
 .body {
-  /* background-color: var(--bg-color); */
+  background-color: var(--primary-bg-color);
   color: #212121;
 }
 .header {
   background-color: #ffffff;
 }
 .main-section {
-  background-color: var(--bg-color);
+  background-color: var(--primary-bg-color);
 }
 
 /* убираем точки у списка */
@@ -50,16 +52,16 @@
   color: rgba(255, 255, 255, 0.6);
 }
 .section2 {
-  background: #e5e5e5;
+  background-color: var(--secondary-bg-color);
 }
 .section3 {
-  background: #e5e5e5;
+  background-color: var(--secondary-bg-color);
 }
 
 .section-team {
-  background: #f5f4fa;
+  background-color: var(--third-bg-color);
 }
 
 .footer {
-  background-color: var(--bg-color);
+  background-color: var(--primary-bg-color);
 }
