@@ -2,6 +2,7 @@
   --primmary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
   --primary-bg-color: #2f303a;
   --secondary-bg-color: #e5e5e5;
   --third-bg-color: #f5f4fa;
@@ -14,24 +15,24 @@
 /* вторичный цвет фона background: #f5f4fa; */
 /* бэкграунд background: #2F303A; */
 
-.body {
-  background-color: var(--primary-bg-color);
-  color: #212121;
-}
-.header {
-  background-color: #ffffff;
-}
-.main-section {
-  background-color: var(--primary-bg-color);
-}
-
 /* убираем точки у списка */
 .list {
   list-style: none;
 }
 
-/* site nav */
+/* header */
 
+.header {
+  background-color: var(--primary-white-color);
+}
+
+.logo {
+  color: var(--primmary-text-color);
+}
+.logo .logo-web,
+.footer-logo .logo-web {
+  color: var(--accent-color);
+}
 .site-nav .link {
   color: var(--primmary-text-color);
 }
@@ -39,29 +40,76 @@
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contacts-header .link:hover,
-.contacts-header .link:focus,
-.footer-contacts .link:hover,
-.footer-contacts .link:focus {
+.contacts-header .link:focus {
   color: var(--accent-color);
 }
 
 .contacts-header .link {
   color: var(--secondary-text-color);
 }
-.footer-contacts .link {
-  color: rgba(255, 255, 255, 0.6);
+
+/* body */
+
+.body {
+  background-color: var(--primary-white-color);
+  color: var(--primmary-text-color);
 }
+
+.main-section {
+  background-color: var(--primary-bg-color);
+}
+
+.main-section .tittle {
+  color: var(--primary-white-color);
+}
+
+/* button */
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button.second {
+  color: var(--primmary-text-color);
+  background-color: var(--third-bg-color);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
+}
+.button.second:hover,
+.button.second:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
 .section2 {
-  background-color: var(--secondary-bg-color);
+  background-color: var(--primary-white-color);
 }
 .section3 {
-  background-color: var(--secondary-bg-color);
+  background-color: var(--primary-white-color);
 }
 
 .section-team {
   background-color: var(--third-bg-color);
 }
 
+/* footer */
+
 .footer {
   background-color: var(--primary-bg-color);
+}
+
+.footer-logo {
+  color: var(--primary-white-color);
+}
+
+.footer-contacts .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-contacts .link:hover,
+.footer-contacts .link:focus {
+  color: var(--accent-color);
 }
