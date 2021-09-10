@@ -8,26 +8,67 @@
   --third-bg-color: #f5f4fa;
 }
 
-/* основной цвет background: #212121; */
-/* цвет акцента background: #2196F3; */
-/* вторичный цвет + контактов в хедере background: #757575; */
-/* цвет контактов в футере background: rgba(255, 255, 255, 0.6); */
-/* вторичный цвет фона background: #f5f4fa; */
-/* бэкграунд background: #2F303A; */
-
-/* убираем точки у списка */
 .list {
   list-style: none;
 }
 
-/* header */
+a {
+  text-decoration: none;
+}
+
+/* BUTTON */
+
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.button.second {
+  color: var(--primmary-text-color);
+  background-color: var(--third-bg-color);
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
+}
+
+.button.second:hover,
+.button.second:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* HEADER */
 
 .header {
-  background-color: var(--primary-white-color);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  text-align: left;
 }
 
 .logo {
   color: var(--primmary-text-color);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 .logo .logo-web,
 .footer-logo .logo-web {
@@ -50,60 +91,88 @@
 
 /* body */
 
-.body {
-  background-color: var(--primary-white-color);
+body {
   color: var(--primmary-text-color);
+  background-color: var(--primary-white-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 .main-section {
+  color: var(--primary-white-color);
   background-color: var(--primary-bg-color);
+  text-align: center;
 }
 
 .main-section .tittle {
-  color: var(--primary-white-color);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-/* button */
-.button {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+.advantage-section {
 }
 
-.button.second {
-  color: var(--primmary-text-color);
+.advantage-section .tittle-item {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.advantage-section .text-item {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.doing-section .tittle,
+.team-section .tittle {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.team-section {
   background-color: var(--third-bg-color);
 }
-
-.button:hover,
-.button:focus {
-  color: var(--accent-color);
-  background-color: var(--primary-white-color);
-}
-.button.second:hover,
-.button.second:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+.team-section .tittle-item {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.18;
 }
 
-.section2 {
-  background-color: var(--primary-white-color);
+.team-section .text-item {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.18;
 }
-.section3 {
+.team-section .card {
   background-color: var(--primary-white-color);
 }
 
-.section-team {
-  background-color: var(--third-bg-color);
-}
-
-/* footer */
+/* FOOTER */
 
 .footer {
   background-color: var(--primary-bg-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
 }
 
 .footer-logo {
   color: var(--primary-white-color);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
 }
 
 .footer-contacts .link {
@@ -112,4 +181,23 @@
 .footer-contacts .link:hover,
 .footer-contacts .link:focus {
   color: var(--accent-color);
+}
+.adress {
+  color: var(--primary-white-color);
+}
+
+/* PORTFOLIO */
+
+.work-list .tittle-item {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+.work-list .text-item {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: left;
 }
