@@ -19,6 +19,7 @@ a {
 /* BUTTON */
 
 .button {
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -27,6 +28,7 @@ a {
 .button.primary {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
 }
@@ -176,6 +178,7 @@ body {
 }
 .adress {
   color: var(--primary-white-color);
+  font-style: normal;
 }
 
 /* PORTFOLIO */
